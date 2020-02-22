@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates|Oswald|Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+.task-style{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 50px;
+    font-family: 'Montserrat';
+    border-bottom: 1px solid #eaeaea;
+}
+.task-style:hover{
+        background-color: #f4f4f4;
+}
+.checkbox {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    height: 48px;
+    width: 100%;
+    cursor: pointer;
+    user-select: none;
+}
+/*.checkbox:hover{*/
+
+/*    */
+/*}*/
+.checkbox input{
+    opacity: 0;
+}
+
+.checkbox-indicate{
+    height: 20px;
+    width: 20px;
+    background: #e8e8e8;
+}
+.checkbox-indicate:hover{
+    opacity: 0.8;
+}
+
+.true{
+    background: #e04255;
+}
+.true::after{
+    content: '';
+    position: absolute;
+    display: block;
+    left: 27px;
+    width: 7px;
+    height: 15px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+.task-buttons{
+    right: -40px;
+    position: relative;
+}
+.task-buttons button{
+    outline: none;
+    border: 0;
+    cursor: pointer;
+    background-color: transparent;
+}
+.task-buttons i{
+    color: #b9b9b9;
+}
+.task-buttons i:hover{
+    color: #e04255;
+}
+.show-no{
+    opacity: 0;
+}
+.show{
+    opacity: 1;
+    margin-right: 50px;
+    transition: 0.2s ease;
+}
+
+

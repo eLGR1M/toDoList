@@ -1,0 +1,31 @@
+.App{
+    display: flex;
+    justify-content: center;
+    background-color: #f0efe9;
+    min-height: 100vh;
+}
+
+.main-App{
+    max-width: 430px;
+    min-width: 430px;
+    /*margin: 0 30%;*/
+    padding: 1%;
+    min-height: 100vh;
+    background-color: #fff;
+    box-shadow: 2px 9px 19px #888886;
+}
+
+
+.tab-style{
+    padding: 0 20%;
+}
+
+div.ui.segment.active.tab{
+    text-align: center;
+    width: 60%;
+    min-height: 90vh;
+    background-color: #fff;
+    border: 0;
+    border-radius: 0;
+    box-shadow: 0;
+}
