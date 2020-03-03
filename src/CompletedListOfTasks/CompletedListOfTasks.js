@@ -1,17 +1,25 @@
-import './CompletedListOfTasks.css';
-import React from "react";
+import './CompletedListOfTasks.scss'
+import React, {useContext} from "react";
 import TaskTablet from "../TaskTablet/TaskTablet";
+import {Context} from "../Context";
 
 
-const CompletedListOfTasks = ({ todoList }) => {
+const CompletedListOfTasks = () => {
+    const { keySelected, todoList } = useContext(Context);
+
+
     const tasks = todoList.map(( element ) => {
-        return (
-            element.completed ?
-                <TaskTablet key = {element.id}
-                            element = {element}
-                />
-                : null
-        )
+        if(element.idDirectory === keySelected) {
+            return (
+                element.completed ?
+                    <TaskTablet
+                        key = {element.id}
+                        element = {element}
+                    />
+                    : null
+            )
+        } else return null
+
     });
 
 

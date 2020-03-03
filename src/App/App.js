@@ -1,36 +1,56 @@
-import './App.css';
+
+import './App.scss'
 
 import React, {useEffect, useState} from 'react';
-import AddNewElement from "../AddNewElement/AddNewElement";
-import ListOfTasks from "../ListOfTasks/ListOfTasks";
-import CompletedListOfTasks from "../CompletedListOfTasks/CompletedListOfTasks";
-import CountOfTask from "../CountOfTask/CountOfTask";
-import ImportListOfTasks from "../ImportListOfTasks/ImportListOfTasks";
+import ToDoSelected from "../ToDoSelected/ToDoSelected";
+import ListOfDirectories from "../ListOfDirectories/ListOfDirectories";
+import {Redirect} from "react-router-dom";
 
 import {Context} from "../Context";
-
+import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 
 export default function App () {
     const [ todoList, setTodoList ] = useState([]);
+    const [ directoriesList, setDirectoriesList ] = useState([]);
+    const [ keySelected, setKeySelected ] = useState(null);
     const [ countTasks, setCountTasks ] = useState(0);
 
+
     useEffect(() =>{
-        const toDo = localStorage.getItem('todoList') || [];
-        const toDo1 = localStorage.getItem('countTasks') || 0;
-        setTodoList(JSON.parse(toDo))
-        setCountTasks(JSON.parse(toDo1))
+
+        const direct = localStorage.getItem('directoriesList') || [];
+        setDirectoriesList(JSON.parse(direct));
     }, []);
 
     useEffect(()=>{
-        localStorage.setItem('todoList', JSON.stringify(todoList));
+        localStorage.setItem('directoriesList', JSON.stringify(directoriesList));
+    }, [directoriesList]);
 
-        localStorage.setItem('countTasks', JSON.stringify(countTasks));
-    }, [todoList]);
+    const createDirectory = value => {
+        setDirectoriesList([
+                ...directoriesList,{
+                    id: Date.now(),
+                    name: value,
+                    selected: false,
+                    todos: []
+            }
+        ]);
+    };
 
-    const addNewElementToList = action => {
+    const removeDirectory = key => {
+        setDirectoriesList(directoriesList.filter(directory => {
+            return directory.id !== key
+        }));
+        setTodoList(todoList.filter( (todo) => {
+            return todo.idDirectory !== key
+        }));
+    };
+
+    const addNewElementToList = ( action ) => {
         if(action !== '') {
             setTodoList([
                 ...todoList,{
+                    idDirectory: keySelected,
                     id: Date.now(),
                     task: action,
                     completed: false,
@@ -43,44 +63,48 @@ export default function App () {
 
     const checkedValue = key => {
         setTodoList(todoList.map(todo => {
-            if(todo.id === key) {
+            if (todo.id === key) {
                 todo.completed = !todo.completed
             }
             return todo;
         }));
     };
 
-    const setImportElement = key => {
-        setTodoList(todoList.map(todo => {
-            if(todo.id === key) {
-                todo.important = !todo.important
-            }
-            return todo;
-        }));
-    };
-
     const removeElement = key => {
-        setTodoList(todoList.filter(todo => {
+        setTodoList(todoList.filter( (todo) => {
             return todo.id !== key
-        }))
+        }));
         setCountTasks( todoList.length - 1 )
     };
 
+    const userContext = {
+        checkedValue, removeElement, addNewElementToList,
+        countTasks, setCountTasks,
+        todoList, setTodoList,
+        createDirectory, removeDirectory,
+        keySelected, setKeySelected,
+        directoriesList, countList :directoriesList.length
+    };
+
+
+
     return (
-        <Context.Provider value={{
-            checkedValue, removeElement, addNewElementToList
-        }}>
-            <div className="App">
-                <div className="main-App">
-                    <AddNewElement action = {addNewElementToList}/>
-                    {/*<ImportListOfTasks importList = {todoList}/>*/}
-                    <ListOfTasks
-                        todoList = {todoList}
-                    />
-                    <CompletedListOfTasks
-                        todoList = {todoList}
-                    />
-                    <CountOfTask countTasks={countTasks}/>
+        <Context.Provider value={userContext}>
+            <div className="app">
+                <div className="app-content">
+                    <Router>
+                        {keySelected === null ? <Redirect exact to={'/'} /> : null}
+                        <Switch>
+                            <Route exact path={'/'}>
+                                <ListOfDirectories />
+                                <ToDoSelected />
+                            </Route>
+                            <Route path={`/directory/${keySelected}`} >
+                                <ListOfDirectories />
+                                <ToDoSelected />
+                            </Route>
+                        </Switch>
+                    </Router>
                 </div>
             </div>
         </Context.Provider>

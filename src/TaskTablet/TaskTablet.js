@@ -1,8 +1,9 @@
+import './TaskTablet.scss'
 import React, {useContext, useState} from "react";
-import './TaskTablet.css'
 import {Context} from "../Context";
 
-export default function TaskTablet ({element}) {
+export default function TaskTablet ({ element }) {
+
     const [ showValues, setShowValues ] = useState("show-no");
     const {checkedValue , removeElement} = useContext(Context);
 
@@ -14,7 +15,7 @@ export default function TaskTablet ({element}) {
                     <div className={`checkbox-indicate ${element.completed}`}></div>
                     <input type="checkbox"
                            checked={element.completed}
-                           onChange={() => checkedValue(element.id)}
+                           onChange={() => {checkedValue(element.id); console.log('eee', element.id)}}
                     />
                     {element.task}
                 </label>

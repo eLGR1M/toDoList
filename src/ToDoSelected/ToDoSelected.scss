@@ -1,0 +1,16 @@
+@import '../App/App';
+
+.main-content{
+  width: 70%;
+  padding: 0 20px 0 30px;
+}
+.SelectDirectoryContent{
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  color: #b9b9b9;
+  font-family: $main-font;
+
+}
+
