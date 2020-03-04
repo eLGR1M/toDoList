@@ -1,11 +1,18 @@
 import "./styles.scss";
 
 import React, { useContext, useState } from "react";
-import { Context } from "../../Context";
+import { Context } from "../../../Context";
 
 export default function TaskTablet({ element }) {
-  const [showValues, setShowValues] = useState("show-no");
+  const [showValues, setShowValues] = useState("hide");
   const { checkedValue, removeElement } = useContext(Context);
+
+  const { id, completed, task } = element;
+
+  const handleRemoveElement = e => {
+    e.preventDefault();
+    removeElement(id);
+  };
 
   return (
     <li
@@ -14,28 +21,22 @@ export default function TaskTablet({ element }) {
         setShowValues("show");
       }}
       onMouseOut={() => {
-        setShowValues("show-no");
+        setShowValues("hide");
       }}
     >
       <label className="checkbox">
-        <div className={`checkbox-indicate ${element.completed}`}></div>
+        <div className={`checkbox-indicate ${completed}`}></div>
         <input
           type="checkbox"
-          checked={element.completed}
+          checked={completed}
           onChange={() => {
-            checkedValue(element.id);
-            console.log("eee", element.id);
+            checkedValue(id);
           }}
         />
-        {element.task}
+        {task}
       </label>
       <div className={`task-buttons ${showValues}`}>
-        <button
-          onClick={e => {
-            e.preventDefault();
-            removeElement(element.id);
-          }}
-        >
+        <button onClick={handleRemoveElement}>
           <i aria-hidden="true" className="trash alternate outline icon"></i>
         </button>
       </div>

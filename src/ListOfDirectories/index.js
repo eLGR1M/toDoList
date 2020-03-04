@@ -6,31 +6,23 @@ import { Context } from "../Context";
 import { Link } from "react-router-dom";
 
 export default function ListOfDirectories() {
-  const {
-    removeDirectory,
-    setKeySelected,
-    directoriesList,
-    countList
-  } = useContext(Context);
+  const { removeDirectory, setKeySelected, directoriesList } = useContext(
+    Context
+  );
 
-  const contentDirectories = () => {
+  const contentDirectories = listLength => {
     return (
       <>
-        <div>
-          <h1 className="direct-style-text">Directories:</h1>
-          {listDirectory}
-        </div>
-        <AddDirectory />
-      </>
-    );
-  };
-
-  const contentNoDirectories = () => {
-    return (
-      <>
-        <div className="contentNoDirectories">
-          <h1>Add new Directory</h1>
-        </div>
+        {listLength !== 0 ? (
+          <div>
+            <h1 className="direct-style-text">Directories:</h1>
+            {listDirectory}
+          </div>
+        ) : (
+          <div className="contentNoDirectories">
+            <h1>Add new Directory</h1>
+          </div>
+        )}
         <AddDirectory />
       </>
     );
@@ -50,7 +42,7 @@ export default function ListOfDirectories() {
               <label className="checkbox">{directory.name}</label>
             </div>
           </Link>
-          <div className={`button-style`}>
+          <div className="button-style">
             <button
               onClick={() => {
                 setKeySelected(null);
@@ -69,7 +61,7 @@ export default function ListOfDirectories() {
   });
   return (
     <div className="List-directory">
-      {countList === 0 ? contentNoDirectories() : contentDirectories()}
+      {contentDirectories(listDirectory.length)}
     </div>
   );
 }

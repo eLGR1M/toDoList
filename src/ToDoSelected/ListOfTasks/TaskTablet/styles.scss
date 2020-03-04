@@ -1,4 +1,4 @@
-@import "../../globalStyles";
+@import "../../../globalStyles";
 
 .task-style {
   display: flex;
@@ -73,7 +73,7 @@
   }
 }
 
-.show-no {
+.hide {
   opacity: 0;
 }
 .show {

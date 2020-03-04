@@ -54,7 +54,8 @@
     margin: 20px 0;
     position: relative;
     top: -35px;
-    right: -42%;
+    right: -50%;
+    transform: translateX(-50%);
 
     &:active {
       transform: translateY(1px);

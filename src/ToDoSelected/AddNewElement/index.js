@@ -11,8 +11,10 @@ export default function AddNewElement() {
 
   const onFormSubmit = e => {
     e.preventDefault();
-    addNewElementToList(value);
-    setValue("");
+    if (value !== "") {
+      addNewElementToList(value);
+      setValue("");
+    }
   };
 
   const NameOfDirectory = () => {
@@ -36,7 +38,7 @@ export default function AddNewElement() {
             type="text"
             placeholder="New task..."
           />
-          <button onClick={onFormSubmit}>
+          <button type="submit">
             <i aria-hidden="true" className="add icon"></i>
           </button>
         </div>

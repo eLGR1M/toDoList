@@ -4,10 +4,10 @@ import React, { useContext, useState } from "react";
 import Modal from "react-modal";
 import { Context } from "../../Context";
 
-Modal.setAppElement("#root");
+Modal.setAppElement("#modal-root");
 export default function AddDirectory() {
   const [value, setValue] = useState("");
-  const [modalIsOpen, setIsOpen] = useState(false);
+  const [isModalOpen, setModalOpen] = useState(false);
 
   const { createDirectory } = useContext(Context);
 
@@ -25,11 +25,11 @@ export default function AddDirectory() {
   };
 
   const openModal = () => {
-    setIsOpen(true);
+    setModalOpen(true);
   };
 
   const closeModal = () => {
-    setIsOpen(false);
+    setModalOpen(false);
   };
 
   const onFormSubmit = e => {
@@ -44,7 +44,7 @@ export default function AddDirectory() {
   return (
     <>
       <Modal
-        isOpen={modalIsOpen}
+        isOpen={isModalOpen}
         onRequestClose={closeModal}
         style={modalStyles}
         contentLabel="Example Modal"
