@@ -1,74 +1,65 @@
-@import '../App/App';
+@import "../globalStyles.scss";
 
-.List-directory{
+.List-directory {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 20px 10px 0 0;
   list-style: none;
   width: 30%;
-  border-right: 1px solid $main-color-2;
+  border-right: 1px solid $color-light-gray;
 
-  h1{
+  h1 {
     text-align: center;
-    margin-bottom: 30px!important;
+    margin-bottom: 30px !important;
   }
 }
-.direct-style-text{
-  font-family: $main-font ;
+.direct-style-text {
+  font-family: $main-font;
   font-size: 30px;
 }
 
-
-.contentNoDirectories{
+.contentNoDirectories {
   height: 50%;
   display: flex;
 
-  h1{
+  h1 {
     width: 100%;
     align-self: flex-end;
-    color: #b9b9b9;
+    color: $color-gray;
   }
 }
 
-.task-style{
+.task-style {
   display: flex;
   justify-content: space-between;
   align-items: center;
   min-height: 50px;
   font-family: $main-font;
-  border-bottom: 1px solid #eaeaea;
+  border-bottom: 1px solid $color-light-gray;
 
-  &:hover{
-    background-color: #f4f4f4;
+  &:hover {
+    background-color: $color-light-gray;
   }
-  //
-  //&:focus{
-  //  .label-content{
-  //    margin-left: 20px;
-  //  }
-  //  background-color: #eae5e5 !important;
-  //  color: black;
-  //}
 
-  i{
+  i {
     margin: 0;
   }
 }
 
-.label-content{
+.label-content {
   width: 100%;
   height: 50px;
 }
 
-.button-style{
+.button-style {
   display: flex;
   justify-content: center;
   height: 50px;
   align-content: center;
   width: 20%;
 
-  button{
+  button {
     outline: none;
     border: 0;
     cursor: pointer;
@@ -76,28 +67,27 @@
     padding: 0;
     width: 100%;
 
-    &:hover{
-      background-color: #e04255;
-      color: #fff;
+    &:hover {
+      background-color: $color-main;
+      color: $color-white;
       transition: 0.2s ease;
     }
   }
 }
 
-.link-style{
+.link-style {
   width: 100%;
   color: black;
 
-  &:hover{
+  &:hover {
     color: black;
   }
   &:focus {
     .label-content {
       margin-left: 10px;
       transition: 0.2s ease;
-      color: #e04255;
+      color: $color-main;
       font-size: medium;
     }
   }
 }
-

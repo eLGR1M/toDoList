@@ -1,15 +1,15 @@
-@import '../App/App';
+@import "../../globalStyles";
 
-.task-style{
+.task-style {
   display: flex;
   justify-content: space-between;
   align-items: center;
   min-height: 50px;
   font-family: $main-font;
-  border-bottom: 1px solid #eaeaea;
+  border-bottom: 1px solid $color-light-gray;
 
-  &:hover{
-    background-color: #f4f4f4;
+  &:hover {
+    background-color: rgba($color-light-gray, 0.8);
   }
 }
 
@@ -22,64 +22,62 @@
   cursor: pointer;
   user-select: none;
 
-  input{
+  input {
     opacity: 0;
   }
 }
 
-.checkbox-indicate{
+.checkbox-indicate {
   height: 20px;
   width: 20px;
-  background: #e8e8e8;
+  background: $color-gray;
 
-  &:hover{
+  &:hover {
     opacity: 0.8;
   }
 }
 
-.true{
-  background: #e04255;
+.true {
+  background: $color-main;
 
-  &::after{
-    content: '';
+  &::after {
+    content: "";
     position: absolute;
     display: block;
     left: 27px;
     width: 7px;
     height: 15px;
-    border: solid #fff;
+    border: solid $color-white;
     border-width: 0 2px 2px 0;
     transform: rotate(45deg);
   }
 }
 
-.task-buttons{
+.task-buttons {
   right: -40px;
   position: relative;
 
-  button{
+  button {
     outline: none;
     border: 0;
     cursor: pointer;
     background-color: transparent;
   }
 
-  i{
-    color: #b9b9b9;
+  i {
+    color: $color-gray;
 
-    &:hover{
-      color: #e04255;
+    &:hover {
+      color: $color-main;
     }
   }
 }
 
-.show-no{
+.show-no {
   opacity: 0;
 }
-.show{
+.show {
   opacity: 1;
   margin-right: 50px;
   transition: 0.2s ease;
 }
-
-
