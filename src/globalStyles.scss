@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+$main-font: "Montserrat";
+
+$color-main: #e04255;
+$color-light-gray: #e0e1e2;
+$color-dark-gray: #888888;
+$color-gray: #bfbfbf;
+$color-white: #fff;
+
+.container {
+  padding: 10px 2% 0;
+}
+
+.txt-center {
+  text-align: center;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  margin: 0;
+}
+
+.w-400 {
+  width: 500px;
+}
+
+.flex-d {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

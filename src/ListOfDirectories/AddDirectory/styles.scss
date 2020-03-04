@@ -1,118 +1,117 @@
-@import '../App/App';
+@import "../../globalStyles.scss";
 
-
-.directory-add-button{
+.directory-add-button {
   align-self: center;
   padding: 0;
   width: 50px;
   height: 50px;
-  border: 1px solid $main-color-1;
+  border: 1px solid $color-main;
   border-radius: 50px;
-  background-color: $main-color-1;
-  color: #ffffff;
+  background-color: $color-main;
+  color: $color-white;
   margin: 20px 0;
 
-  i{
+  i {
     margin: 0;
   }
 
-  &:hover{
+  &:hover {
     cursor: pointer;
-    border: 1px solid #ffffff;
+    border: 1px solid $color-white;
     outline: none;
   }
-  &:focus{
+  &:focus {
     outline: 0;
   }
 }
-.modal-top-content{
+.modal-top-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 20px 10px 20px;
   margin: 0 0 10px 0;
-  border-bottom: 1px solid $main-color-2;
+  border-bottom: 1px solid $color-light-gray;
   font-family: $main-font;
 
-  p{
+  p {
     margin: 0;
     font-size: medium;
   }
 }
-.modal-exit-butt{
+.modal-exit-button {
   padding: 0;
   outline: none;
   border: none;
   cursor: pointer;
 
-  i{
+  i {
     margin: 0;
   }
 }
-.modal-main-content{
+.modal-main-content {
   padding: 20px;
 }
-.modal-input{
+.modal-input {
   height: 50px;
   border-radius: 5px;
   padding: 0 20px;
 
-  input{
+  input {
     width: 100%;
     height: 100%;
     border-radius: 4px;
-    border: 1px solid $main-color-2;
+    border: 1px solid $color-light-gray;
     padding: 10px 20px;
-    font-family: $main-font ;
+    font-family: $main-font;
 
-    &::placeholder{
+    &::placeholder {
       font-size: 15px;
-      font-family: $main-font ;
+      font-family: $main-font;
     }
 
-    &:hover{
-      border: 1px solid $main-color-3;
-      transition: 0.1s ;
+    &:hover {
+      border: 1px solid $color-gray;
+      transition: 0.1s;
       cursor: pointer;
     }
 
-    &:focus{
-      border: 1px solid $main-color-3;
+    &:focus {
+      border: 1px solid $color-gray;
       cursor: text;
-      outline:none;
+      outline: none;
     }
   }
-  button{
+  button {
     align-self: center;
     padding: 0;
     width: 50px;
     height: 50px;
-    border: 1px solid $main-color-1;
+    border: 1px solid $color-main;
     border-radius: 50px;
-    background-color: $main-color-1;
-    color: #ffffff;
+    background-color: $color-main;
+    color: $color-white;
     margin: 20px 0;
     position: relative;
     top: -35px;
     right: -42%;
 
-    &:active{
+    &:active {
       transform: translateY(1px);
       filter: saturate(150%);
     }
 
-    &:hover{
+    &:hover {
       filter: saturate(120%);
       cursor: pointer;
     }
 
-    &:focus{
+    &:focus {
       outline: none;
     }
 
-    i{
+    i {
       margin: 0;
-      color: #fff;
+      color: $color-white;
     }
   }
 }
