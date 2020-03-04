@@ -58,7 +58,6 @@
     transform: translateX(-50%);
 
     &:active {
-      transform: translateY(1px);
       filter: saturate(150%);
     }
 
