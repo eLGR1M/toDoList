@@ -2,33 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="15b8e459-e48a-4761-9d8c-affc7887c976" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/AddDirectory/AddDirectory.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AddDirectory/AddDirectory.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AddNewElement/AddNewElement.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/App/App.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CompletedListOfTasks/CompletedListOfTasks.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ListOfDirectories/ListOfDirectories.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ListOfDirectories/ListOfDirectories.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ListOfTasks/ListOfTasks.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/TaskTablet/TaskTablet.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ToDoSelected/ToDoSelected.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ToDoSelected/ToDoSelected.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ToDoSelected/ToDoSelected.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AddNewElement/AddNewElement.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AddNewElement/AddNewElement.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AddNewElement/AddNewElement.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CompletedListOfTasks/CompletedListOfTasks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/CompletedListOfTasks/CompletedListOfTasks.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CountOfTask/CountOfTask.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CountOfTask/CountOfTask.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ImportListOfTasks/ImportListOfTasks.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ListOfTasks/ListOfTasks.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ListOfTasks/ListOfTasks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ListOfTasks/ListOfTasks.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TaskTablet/TaskTablet.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TaskTablet/TaskTablet.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/TaskTablet/TaskTablet.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Context.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Context.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -63,6 +38,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -110,6 +86,8 @@
       <option name="presentableId" value="Default" />
       <updated>1580512848590</updated>
       <workItem from="1580512850168" duration="165954000" />
+      <workItem from="1583353409465" duration="1676000" />
+      <workItem from="1583449693224" duration="6808000" />
     </task>
     <task id="LOCAL-00001" summary="toDoList">
       <created>1582374625106</created>
@@ -129,7 +107,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

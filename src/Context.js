@@ -9,6 +9,12 @@ const initialState = {
 };
 
 export const CREATE_DIRECTORY = "createDirectory";
+export const REMOVE_DIRECTORY = "removeDirectory";
+export const ADD_NEW_ELEMENT_TO_LIST = "addNewElementToList";
+export const CHECKED_VALUE = "checkedValue";
+export const SET_KEY_SELECTED = "setKeySelected";
+export const REMOVE_ELEMENT = "removeElement";
+
 
 function reducer(state, action) {
   switch (action.type) {
@@ -20,12 +26,11 @@ function reducer(state, action) {
           {
             id: Date.now(),
             name: action.value,
-            selected: false,
-            todos: []
+            selected: false
           }
         ]
       };
-    case "removeDirectory":
+    case REMOVE_DIRECTORY:
       return {
         ...state,
         todoList: state.todoList.filter(
@@ -35,7 +40,7 @@ function reducer(state, action) {
           dir => dir.id !== action.key
         )
       };
-    case "addNewElementToList":
+    case ADD_NEW_ELEMENT_TO_LIST:
       return {
         ...state,
         todoList: [
@@ -49,7 +54,7 @@ function reducer(state, action) {
           }
         ]
       };
-    case "checkedValue":
+    case CHECKED_VALUE:
       return {
         ...state,
         todoList: state.todoList.map(todo => {
@@ -59,12 +64,12 @@ function reducer(state, action) {
           return todo;
         })
       };
-    case "setKeySelected":
+    case SET_KEY_SELECTED:
       return {
         ...state,
         keySelected: action.key
       };
-    case "removeElement":
+    case REMOVE_ELEMENT:
       return {
         ...state,
         todoList: state.todoList.filter(todo => todo.id !== action.key)
@@ -82,12 +87,11 @@ export function useGlobalState() {
     directoriesList: state.directoriesList,
     keySelected: state.keySelected,
     createDirectory: value => dispatch({ type: CREATE_DIRECTORY, value }),
-    removeDirectory: key => dispatch({ type: "removeDirectory", key }),
-    addNewElementToList: value =>
-      dispatch({ type: "addNewElementToList", value }),
-    checkedValue: key => dispatch({ type: "checkedValue", key }),
-    setKeySelected: key => dispatch({ type: "setKeySelected", key }),
-    removeElement: key => dispatch({ type: "removeElement", key })
+    removeDirectory: key => dispatch({ type: REMOVE_DIRECTORY, key }),
+    addNewElementToList: value => dispatch({ type: ADD_NEW_ELEMENT_TO_LIST, value }),
+    checkedValue: key => dispatch({ type: CHECKED_VALUE, key }),
+    setKeySelected: key => dispatch({ type: SET_KEY_SELECTED, key }),
+    removeElement: key => dispatch({ type: REMOVE_ELEMENT, key }),
   };
 }
 
