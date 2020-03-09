@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="15b8e459-e48a-4761-9d8c-affc7887c976" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Context.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Context.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -87,7 +88,7 @@
       <updated>1580512848590</updated>
       <workItem from="1580512850168" duration="165954000" />
       <workItem from="1583353409465" duration="1676000" />
-      <workItem from="1583449693224" duration="6808000" />
+      <workItem from="1583449693224" duration="7527000" />
     </task>
     <task id="LOCAL-00001" summary="toDoList">
       <created>1582374625106</created>
@@ -96,7 +97,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582374625107</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="fix commit">
+      <created>1583539346863</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1583539346863</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -117,6 +125,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="toDoList" />
-    <option name="LAST_COMMIT_MESSAGE" value="toDoList" />
+    <MESSAGE value="fix commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix commit" />
   </component>
 </project>
