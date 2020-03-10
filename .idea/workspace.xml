@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="15b8e459-e48a-4761-9d8c-affc7887c976" name="Default Changelist" comment="fix commit">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -88,6 +88,7 @@
       <workItem from="1580512850168" duration="165954000" />
       <workItem from="1583353409465" duration="1676000" />
       <workItem from="1583449693224" duration="7527000" />
+      <workItem from="1583878549414" duration="1003000" />
     </task>
     <task id="LOCAL-00001" summary="toDoList">
       <created>1582374625106</created>
