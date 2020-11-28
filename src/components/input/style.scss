@@ -1,0 +1,24 @@
+.input-style  {
+  width: calc(60% - 15px);
+  margin-right: 15px;
+  height: 45px;
+  border-radius: 10px;
+  border: 0;
+  padding: 10px 20px;
+  font-family: "Montserrat";
+  background-color: #f1f2f7;;
+
+  &::placeholder {
+    font-size: 15px;
+    font-family: "Montserrat";
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:focus {
+    cursor: text;
+    outline: none;
+  }
+}

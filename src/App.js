@@ -3,6 +3,8 @@ import "./App.scss";
 import React from "react";
 import ToDoSelected from "./ToDoSelected";
 import ListOfDirectories from "./ListOfDirectories";
+import Menu from "./components/menu";
+import Footer from "./components/footer";
 import { Redirect } from "react-router-dom";
 
 import { Context, useContextFunctions } from "./Context";
@@ -10,10 +12,19 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 export default function App() {
   const userContext = useContextFunctions();
+  const content = () => {
+    return (
+      <>
+        {/*<Menu />*/}
+        <ListOfDirectories />
+        <ToDoSelected />
+      </>
+    )
+  };
 
   return (
     <Context.Provider value={userContext}>
-      <div className="app">
+      <Menu/>
         <div className="app-content">
           <Router>
             {userContext.keySelected === null ? (
@@ -21,17 +32,15 @@ export default function App() {
             ) : null}
             <Switch>
               <Route exact path={"/"}>
-                <ListOfDirectories />
-                <ToDoSelected />
+                {content()}
               </Route>
               <Route path={`/directory/${userContext.keySelected}`}>
-                <ListOfDirectories />
-                <ToDoSelected />
+                {content()}
               </Route>
             </Switch>
           </Router>
         </div>
-      </div>
+      <Footer />
     </Context.Provider>
   );
 }

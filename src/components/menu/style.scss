@@ -1,0 +1,16 @@
+@import '../../globalStyles';
+
+.menu-main{
+  background-color: #f1f2f7;
+  height: 70px;
+  padding: 20px;
+  color: $blue-main-color;
+
+  a{
+    color: $blue-main-color;
+
+    &:hover{
+      opacity: 0.7;
+    }
+  }
+}

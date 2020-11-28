@@ -1,0 +1,19 @@
+@import "../../globalStyles.scss";
+
+.footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  background-color: $background-color-1;
+  font-family: $main-font;
+
+  a{
+    color: $blue-main-color;
+    font-weight: bold;
+
+    &:hover{
+      color: black;
+    }
+  }
+}

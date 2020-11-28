@@ -1,16 +1,8 @@
 @import "./globalStyles.scss";
 
-.app {
-  display: flex;
-  justify-content: center;
-  background-color: $color-light-gray;
-  min-height: 100vh;
-}
 .app-content {
   display: flex;
-  min-width: 90%;
-  padding: 1%;
-  min-height: 100vh;
-  background-color: $color-white;
-  box-shadow: 2px 9px 19px $color-dark-gray;
+  min-width: 100%;
+  height: calc(100vh - 70px - 40px);
+  background-color: $background-color-1;
 }

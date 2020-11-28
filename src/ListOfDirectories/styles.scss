@@ -4,19 +4,28 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 20px 10px 0 0;
+  margin: 30px;
+  background-color: $color-white;
+  border-radius: 20px;
+  box-shadow: 0px 0px 5px 0px #c0c0c0;
+  width: calc(35% - 30px - 30px);
   list-style: none;
-  width: 30%;
-  border-right: 1px solid $color-light-gray;
 
   h1 {
     text-align: center;
     margin-bottom: 30px !important;
+    font-family: "Montserrat";
   }
 }
 .direct-style-text {
   font-family: $main-font;
   font-size: 30px;
+}
+
+.contentDirectories{
+  height: calc(100% - 40px - 45px);
+  overflow: auto;
+  padding: 40px 20px 10px 20px;
 }
 
 .contentNoDirectories {
@@ -36,14 +45,20 @@
   align-items: center;
   min-height: 50px;
   font-family: $main-font;
-  border-bottom: 1px solid $color-light-gray;
+  border-radius: 10px;
+  background-color: #f1f2f7;
+  margin: 0 0 15px 0;
+}
 
-  &:hover {
-    background-color: $color-light-gray;
-  }
+.checkbox-d{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding-left: 20px;
 
-  i {
-    margin: 0;
+  &:hover{
+    cursor: pointer;
+
   }
 }
 
@@ -70,7 +85,8 @@
     &:hover {
       background-color: $color-main;
       color: $color-white;
-      transition: 0.2s ease;
+      border-radius: 10px;
+      transition: background-color 0.2s ease;
     }
   }
 }
@@ -82,12 +98,63 @@
   &:hover {
     color: black;
   }
+
   &:focus {
-    .label-content {
-      margin-left: 10px;
-      transition: 0.2s ease;
-      color: $color-main;
-      font-size: medium;
+    border-left: 4px solid #1e7bfe;
+    border-radius: 10px;
+  }
+}
+
+
+// Modal
+
+.modal-top-content{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+
+
+  p{
+    margin: 0;
+    font-family: $main-font;
+    font-size: large;
+  }
+
+  .modal-exit-button{
+    border: 0;
+    padding: 0;
+    align-items: center;
+    background-color: $color-white;
+
+    &:hover{
+      cursor: pointer;
+      opacity: 0.7;
+    }
+
+    &:focus{
+      outline: none;
+    }
+
+    i{
+      margin: 0;
+    }
+  }
+}
+
+.modal-main-content{
+
+  .modal-input{
+    display: flex;
+    flex-direction: column;
+
+    input{
+      width: 100%;
+    }
+
+    button{
+      width: 50%;
+      align-self: center;
+      margin-top: 20px;
     }
   }
 }

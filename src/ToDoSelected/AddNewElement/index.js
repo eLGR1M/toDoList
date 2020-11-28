@@ -2,6 +2,8 @@ import "./styles.scss";
 
 import React, { useContext, useState } from "react";
 import { Context } from "../../Context";
+import Button from "../../components/button";
+import Input from "../../components/input";
 
 export default function AddNewElement() {
   const [value, setValue] = useState("");
@@ -28,21 +30,18 @@ export default function AddNewElement() {
   };
 
   return (
-    <div className="input-form">
-      {NameOfDirectory()}
-      <form onSubmit={onFormSubmit}>
-        <div className="input-style">
-          <input
-            value={value}
-            onChange={e => setValue(e.target.value)}
-            type="text"
-            placeholder="New task..."
+
+      <form className="input-form" onSubmit={onFormSubmit}>
+        {NameOfDirectory()}
+        <div>
+          <Input value={value}
+                 onChange={e => setValue(e.target.value)}
+                 type="text"
+                 placeholder="New task..."
           />
-          <button type="submit">
-            <i aria-hidden="true" className="add icon"></i>
-          </button>
+          <Button classBtn="add-task" textBtn="Add new task"/>
         </div>
       </form>
-    </div>
+
   );
 }

@@ -2,10 +2,14 @@
 $main-font: "Montserrat";
 
 $color-main: #e04255;
-$color-light-gray: #e0e1e2;
-$color-dark-gray: #888888;
 $color-gray: #bfbfbf;
 $color-white: #fff;
+
+//new colors
+$background-color-1: #f8f8f8;
+$blue-main-color: #4050b5;
+$gray-main-color: #f1f2f7;
+$gray-color: #515151;
 
 .container {
   padding: 10px 2% 0;
@@ -33,4 +37,8 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#root{
+  min-height: 100vh;
 }

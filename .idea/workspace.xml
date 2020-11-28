@@ -2,8 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="15b8e459-e48a-4761-9d8c-affc7887c976" name="Default Changelist" comment="fix commit">
+      <change afterPath="$PROJECT_DIR$/src/ToDoSelected/ListOfTasks/style.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/button/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/button/style.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/footer/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/footer/style.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/input/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/input/style.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/menu/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/menu/style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ListOfDirectories/AddDirectory/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ListOfDirectories/AddDirectory/styles.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ListOfDirectories/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ListOfDirectories/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ListOfDirectories/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/ListOfDirectories/styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ToDoSelected/AddNewElement/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ToDoSelected/AddNewElement/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ToDoSelected/AddNewElement/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/ToDoSelected/AddNewElement/styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ToDoSelected/ListOfTasks/TaskTablet/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ToDoSelected/ListOfTasks/TaskTablet/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ToDoSelected/ListOfTasks/TaskTablet/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/ToDoSelected/ListOfTasks/TaskTablet/styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ToDoSelected/ListOfTasks/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ToDoSelected/ListOfTasks/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ToDoSelected/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ToDoSelected/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ToDoSelected/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/ToDoSelected/styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/globalStyles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/globalStyles.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,6 +51,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -88,7 +111,8 @@
       <workItem from="1580512850168" duration="165954000" />
       <workItem from="1583353409465" duration="1676000" />
       <workItem from="1583449693224" duration="7527000" />
-      <workItem from="1583878549414" duration="1003000" />
+      <workItem from="1583878549414" duration="1443000" />
+      <workItem from="1606229835611" duration="27540000" />
     </task>
     <task id="LOCAL-00001" summary="toDoList">
       <created>1582374625106</created>

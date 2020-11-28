@@ -1,14 +1,31 @@
 @import "../globalStyles";
 
 .main-content {
-  width: 70%;
-  padding: 0 20px 0 30px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  overflow: auto;
+  margin: 30px 30px 30px 0;
+  background-color: $color-white;
+  border-radius: 20px;
+  box-shadow: 0px 0px 5px 0px #c0c0c0;
+  width: calc(65% - 30px);
+  height: calc(100% - 60px);
+  color: $gray-color;
 }
 .SelectDirectoryContent {
-  width: 70%;
   display: flex;
   justify-content: center;
-  align-self: center;
+  align-items: center;
+  margin: 30px 30px 30px 0;
+  background-color: $color-white;
+  border-radius: 20px;
+  box-shadow: 0px 0px 5px 0px #c0c0c0;
+  width: calc(65% - 30px);
+  height: calc(100% - 60px);
   color: $color-gray;
-  font-family: $main-font;
+
+  h1{
+    font-family: $main-font;
+  }
 }
